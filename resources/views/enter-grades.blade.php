@@ -16,7 +16,7 @@
     <h5>Please Enter Your Name/s </h5>
     <hr>
 
-    <form action="/student-grades" method="POST">
+    <form action="/computed-grades" method="POST">
     <input type="hidden" name="student_1" value= "{{ $student_1 }}">
     <input type="hidden" name="student_2" value= "{{ $student_2 }}">
     <input type="hidden" name="student_3" value= "{{ $student_3 }}">
@@ -34,9 +34,9 @@
         <label> 2nd Grade </label>
         <input type="number" class="form-control" name="s1_2ndGrade">
     </div>
-</div>
+    </div>
     
-<div class ="row">
+    <div class ="row">
     <label> Student Name: {{ $student_2 }} </label>
     <div class="col cols=md-6">
         <label> 1st Grade </label>
@@ -46,9 +46,9 @@
         <label> 2nd Grade </label>
         <input type="number" class="form-control" name="s2_2ndGrade">
     </div>
-</div>
+    </div>
 
-<div class ="row">
+    <div class ="row">
     <label> Student Name: {{ $student_3 }} </label>
     <div class="col cols=md-6">
         <label> 1st Grade </label>
@@ -58,9 +58,9 @@
         <label> 2nd Grade </label>
         <input type="number" class="form-control" name="s3_2ndGrade">
     </div>
-</div>
+    </div>
 
-<div class ="row">
+    <div class ="row">
     <label> Student Name: {{ $student_4 }} </label>
     <div class="col cols=md-6">
         <label> 1st Grade </label>
@@ -70,9 +70,9 @@
         <label> 2nd Grade </label>
         <input type="number" class="form-control" name="s4_2ndGrade">
     </div>
-</div>
+    </div>
 
-<div class ="row">
+    <div class ="row">
     <label> Student Name: {{ $student_5 }} </label>
     <div class="col cols=md-6">
         <label> 1st Grade </label>
@@ -82,18 +82,13 @@
         <label> 2nd Grade </label>
         <input type="number" class="form-control" name="s5_2ndGrade">
     </div>
-</div>
-
+    </div>
     <hr>
-
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">  
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </div>
     </form>
 </div>
-  </body>
+</body>
 </html>
     
-</div>
-  </body>
-</html>

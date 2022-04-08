@@ -15,18 +15,20 @@
     <h5>Please Enter Your Names </h5>
     <hr>
 
-    <form action="/student-grades" method="POST">
+    <form class="needs-validation" novalidate action="/enter-grades" method="POST" >
     @csrf
     @for ($i = 1; $i <= 5; $i ++)
     <div class="mb-3">
         <label> Student {{ $i }} Name: </label>
-        <input type="text" class="form-control" name="student_{{ $i }}">
+        <input type="text" class="form-control" name="student_{{ $i }}" required />
+        <div class="invalid-feedback">
+        Please enter a message in the textarea.
+        </div>
     </div>
     @endfor
     <hr>
-    
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">  
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </div>
     </form>
 
